@@ -5,8 +5,6 @@ const ratingElements = document.querySelectorAll(".value");
 const questionSectionEl = document.querySelector(".question-section");
 const thankYouSectionEl = document.querySelector(".thank-you--section");
 const selectedValueEl = document.querySelector(".selected-value");
-console.log(questionSectionEl);
-console.log(thankYouSectionEl);
 
 // BUTTON
 const btnSubmit = document.querySelector(".btn-submit");
@@ -19,7 +17,6 @@ ratingElements.forEach(function (rating) {
       if (element === e.target) {
         element.classList.add("background-orange");
         selectedRating = Number(element.textContent);
-        console.log(selectedRating);
       } else element.classList.remove("background-orange");
     }
   });
