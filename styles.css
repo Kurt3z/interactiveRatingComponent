@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* Only Chrome and Firefox */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #121417;
+  color: #959eac;
+  height: 100vh;
+
+  /* Only works if there is nothing absolutely position in relation to body */
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  /* background-color: #252d37; */
+  background: linear-gradient(
+    to bottom,
+    hsla(217, 12%, 63%, 0.11) 0%,
+    hsla(213, 20%, 18%, 0.712) 20%,
+    hsla(213, 20%, 18%, 0.404) 100%,
+    hsla(213, 20%, 18%, 0.116) 100%
+  );
+  max-width: 41.2rem;
+  padding: 3rem;
+  border-radius: 25px;
+}
+
+.icon-section {
+  margin-bottom: 3rem;
+  background-color: hsl(213, 20%, 18%);
+  max-width: fit-content;
+  padding: 1.3rem;
+  border-radius: 50%;
+}
+
+.question-heading,
+.thank-you--heading {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.feedback-text {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.values-section {
+  margin-bottom: 2.7rem;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.value {
+  /* padding: 2.2rem; */
+  background-color: #252d37;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s;
+}
+
+.value:hover {
+  background-color: #fff;
+  color: #121417;
+  font-weight: 600;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 35px;
+  border: none;
+  background-color: #fb7413;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn-submit:hover {
+  background-color: #fff;
+}
+
+/* AFTER SUBMIT */
+.thank-you--section {
+  /* text-align: center; */
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you--icon {
+  margin-bottom: 3rem;
+}
+
+.selected-value--mesage {
+  background-color: hsla(213, 20%, 18%, 0.5);
+  width: fit-content;
+  padding: 1rem 1.7rem;
+  color: #fb7413d2;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  margin-bottom: 3.4rem;
+}
+
+.thank-you--mesage {
+  text-align: center;
+  font-size: 1.35rem;
+  line-height: 1.6;
+}
+
+/* *************************** */
+/* CSS Classes for JavaScript */
+
+.hidden {
+  display: none;
+}
+
+.background-orange {
+  background-color: #fb7413;
+  color: #000;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    padding: 0 2.4rem;
+  }
+}

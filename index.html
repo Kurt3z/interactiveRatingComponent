@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- ICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Kurt3z | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="main-section">
+      <section class="question-section">
+        <section class="icon-section">
+          <img src="./images/icon-star.svg" alt="Star icon" />
+        </section>
+
+        <h1 class="question-heading">How did we do?</h1>
+
+        <p class="feedback-text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <section class="values-section">
+          <div class="value">1</div>
+          <div class="value">2</div>
+          <div class="value">3</div>
+          <div class="value">4</div>
+          <div class="value">5</div>
+        </section>
+
+        <button class="btn-submit">Submit</button>
+      </section>
+
+      <section class="thank-you--section hidden">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Thank you icon"
+          class="thank-you--icon"
+        />
+
+        <div class="selected-value--mesage">
+          <p class="selected-value--info">
+            You selected <span class="selected-value">4</span> out of 5
+          </p>
+        </div>
+
+        <h1 class="thank-you--heading">Thank you!</h1>
+
+        <p class="thank-you--mesage">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
